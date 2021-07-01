@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body onload="initialise_Page()">
+        
+        
+<div>        
+
+    <!-- MAP CONTANIER -->
+    <img class="responsive-img" src="image/map_back.png">    
+        
+        
+    <!-- MAIN OPTIONS -->    
+        
+    <div class="fixed-action-btn">
+      <a id="map_button" class="btn-floating btn-large yellow darken-3" pulse>
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating blue darken-1"><i class="material-icons">find_in_page</i></a></li>
+        <li><a class="btn-floating purple darken-1 "><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating red darken-1"><i class="material-icons">map</i></a></li>
+        <li><a class="btn-floating orange darken-2"><i class="material-icons">layers</i></a></li>
+        <li><a class="btn-floating green darken-1"><i class="material-icons">fingerprint</i></a></li>
+        <li><a class="btn-floating brown darken-1"><i class="material-icons">publish</i></a></li>
+      </ul>
+    </div>         
+
+</div>    
+        
+        
+        
+    <!--Import jQuery before materialize.js-->
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        
+     function initialise_Page() {    
+         
+      alert("Here");    
+         
+     }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        alert(elems);  
+        //var elems = M.FloatingActionButton.getInstance('map-button');  
+        var instances = M.FloatingActionButton.init(elems, {
+          toolbarEnabled: true, direction: 'left';    
+        });
+      });
+        
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, options);
+      });
+
+      document.getElementById("map_button").setAttribute("option","bottom");
+            
+
+    </script>              
+        
+        
+    </body>
+  </html>

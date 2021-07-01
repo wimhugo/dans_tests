@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Search</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>  
+  <link href="css/overwrites.css" type="text/css" rel="stylesheet" media="screen,projection"/>  
+</head>
+<body>    
+    
+<!-- SIDE NAVIGATION-->    
+    
+    
+  <!-- Side Navigation-->  
+  <ul id="slide-out" class="side-nav">
+      
+    <img  style="width: 200px; left-padding:40px" src="image/logo_saeon.png">
+    <!--<li>SAEON Open Data Platform</li>-->
+            
+      
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Archive<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a class="modal-trigger" href="#saws-modal" style="font-size:12px; text-indent:50px">SAWS Climate Atlas</a></li>
+                <li><a class="modal-trigger" href="#beeh-modal" style="font-size:12px; text-indent:50px">Atlas of Agrohydrology</a></li>
+                <li><a class="modal-trigger" href="#sarv2-modal" style="font-size:12px; text-indent:50px">SARVA 2.0</a></li>
+                <li><a class="modal-trigger" href="#sarv1-modal" style="font-size:12px; text-indent:50px">SARVA 1.0</a></li>
+                <li><a class="modal-trigger" href="#read-modal" style="font-size:12px; text-indent:50px">Reading Risk</a></li>  
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>       
+      <img style="width:280px" src="image/logo_odp.png">      
+      
+  </ul>      
+    
+  <a href="#" data-activates="slide-out" class="button-collapse "><i class="small material-icons grey-text ">menu</i></a>
+
+<!-- TOP NAVIGATION -->    
+    
+    
+<!-- dropdowns-->
+    <!--user--> 
+    <ul id="dropdown_user" class="dropdown-content">
+      <li><a href="#!">Sign In</a></li>
+      <li><a href="#!">Sign Up</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Edit Profile</a></li>
+    </ul> 
+
+<!-- menu -->
+    
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img style="width: 100px; top: 10px" src="image/logo_odp_small.png">  
+      <a id="logo-container" href="#" class="brand-logo" title="SAEON Open Data Platform. Open Data for Open Science.">&nbsp SAEON ODP</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="modal-trigger" href="#about-modal">Services</a></li>
+        <li><a class="modal-trigger" href="#theme-modal">Themes</a></li>
+        <li><a class="modal-trigger" href="#profile-modal">Institutions</a></li>
+        <li><a class="modal-trigger" href="#atlas-modal" title="Access to online atlases, metadata, and downloads">Collections</a></li>               
+        <li><a class="modal-trigger" href="#">Products</a></li>
+        <li><a class="modal-trigger" href="#contact-modal" title="Contact us or log a ticket"><i class="large material-icons">contact_mail</i></a></li>  
+        <li><a class="dropdown-trigger" href="#sso-modal" data-target="dropdown_user" title="Log In or Register"><i class="large material-icons">verified_user</i></a></li>  
+        <li><a class="modal-trigger" href="#settings-modal" title="Preferences and Settings"><i class="large material-icons" >settings</i></a></li>  
+      </ul>       
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+<!-- PARALLAX -->      
+    
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <br><br>
+        <h2 class="header white-text text-darken-1">Search for Data Across Data Families, Institutions, and Themes</h2>
+        <div class="row ">
+          <h5 class="header col s12 white-text text-darken-4">SAEON maintains a standardised, globally integrated metadata aggregation referencing thousands of Global Change datasets and services - focused on, but not limited to, Southern Africa.</h5>
+        </div>     
+          
+        <!-- Search Facility-->
+          <div class="row">
+            <div class="col s12 ">
+              <div class="row">
+                <div class="input-field col s6 center">
+                  <i class="material-icons prefix">search</i>
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">Search</label>
+                </div>
+              </div>
+            </div>
+          </div>          
+          
+          
+      </div>
+    </div>
+    <div class="parallax"><img src="image\background_image_01.png" alt="Unsplashed background img 1"></div>
+  </div>
+
+<!-- MAIN COMPONENTS -->      
+    
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section - Families  -->
+      <div class="row">
+          
+        <div class="col s12 m2">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">ac_unit</i>
+            <h5 class="center">Time Series</h5>
+            <p class="light center">Weather stations, buoys, flux towers, and more.</p>
+            <p class="light center" style="font-size: 30px">90 m</p>
+            <p class="light center">observation records</p>              
+          </div>
+        </div>  
+          
+        <div class="col s12 m3">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">language</i>
+            <h5 class="center">Spatial Data</h5>
+            <p class="light center">Standardised, distributed services that can be anywhere in the web - based on OGC standards</p>
+            <p class="light center" style="font-size: 30px">1,800</p>
+            <p class="light center">open data layers</p>              
+          </div>
+        </div>   
+          
+        <div class="col s12 m2">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">local_florist</i>
+            <h5 class="center">Biodiversity</h5>
+            <p class="light center">Services, <a>BioCubes</a>, and <a>Crowdsourced</a> Data.</p>
+            <p class="light center" style="font-size: 30px">435</p>
+            <p class="light center">species</p>              
+          </div>
+        </div>            
+          
+        <div class="col s12 m3">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">grid_on</i>
+            <h5 class="center">Multidimensional</h5>
+            <p class="light center">A collection of climate and ocean models, socio-economic indicators, and remotely sensed cubes.</p>
+            <p class="light center" style="font-size: 30px">12</p>
+            <p class="light center"><a href="#">Virtual Cubes</a></p>              
+          </div>
+        </div>      
+          
+        <div class="col s12 m2">
+          <div class="icon-block center">
+            <a class="waves-effect waves-teal btn-flat tooltipped" data-position="bottom" data-tooltip="SAEON is increasingly hosting and referencing digital samples from a large variety of auotmated platforms: drones, camera traps, underwater video, audio arrays, and more" href="#">
+                <i class="large material-icons" style="font-size: 40px">photo_camera</i>
+            </a>
+            <h5 class="center">Media</h5>
+            <p class="light center">Audio, Images, and Video - automated observation.</p>
+            <p class="light center" style="font-size: 30px">18,000</p>
+            <p class="light center">objects</p>              
+          </div>
+        </div>          
+        
+    </div>
+        
+        
+     <!-- Icon Section - Divider    -->
+        
+     <div class="row">
+         <div class="col s12 m12 gray"></div>
+     </div>    
+        
+        
+     <!--   Icon Section - Themes  -->
+      <div class="row">
+          
+        <div class="col s12 m2">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">transform</i>
+            <h5 class="center">Cycles</h5>
+            <p class="light center">Water, Carbon, and Nitrogen Cycles.</p>
+<!--            <p class="light center" style="font-size: 30px">90 m</p>
+            <p class="light center">observation records</p>  -->            
+          </div>
+        </div>  
+          
+        <div class="col s12 m3">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">pool</i>
+            <h5 class="center">Coastline and Estuaries</h5>
+            <p class="light center">Long-term data and reporting on the state of our coastline</p>
+<!--            <p class="light center" style="font-size: 30px">1,800</p>
+            <p class="light center">open data layers</p>  -->            
+          </div>
+        </div>   
+          
+        <div class="col s12 m2">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">terrain</i>
+            <h5 class="center">Ecosystems</h5>
+            <p class="light center">Occurence, Abundance, Structure, Traits, Phenology.</p>
+<!--            <p class="light center" style="font-size: 30px">435</p>
+            <p class="light center">species</p> -->             
+          </div>
+        </div>            
+          
+        <div class="col s12 m3">
+          <div class="icon-block center">
+            <i class="large material-icons" style="font-size: 40px">directions_boat</i>
+            <h5 class="center">The Ocean</h5>
+            <p class="light center">Ocean models, oceanography, marine biology.</p>
+<!--            <p class="light center" style="font-size: 30px">12</p>
+            <p class="light center"><a href="#">Virtual Cubes</a></p>   -->           
+          </div>
+        </div>      
+          
+        <div class="col s12 m2">
+          <div class="icon-block center">
+            <a class="waves-effect waves-teal btn-flat tooltipped" data-position="bottom" data-tooltip="SAEON is increasingly hosting and referencing digital samples from a large variety of auotmated platforms: drones, camera traps, underwater video, audio arrays, and more" href="#">
+                <i class="large material-icons" style="font-size: 40px">transfer_within_a_station</i>
+            </a>
+            <h5 class="center">Society</h5>
+            <p class="light center">Demography, Land Use Change, Ecosystem Services, Economic Activity, Livelihoods.</p>
+<!--            <p class="light center" style="font-size: 30px">18,000</p>
+            <p class="light center">objects</p>  -->            
+          </div>
+        </div>          
+        
+    </div>        
+        
+  </div>    
+</div>  
+
+      
+      
+<!---<div>
+   <p class="light center">... and counting!</p>
+</div>  -->    
+    
+  <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text light">Technology</h5>
+          <p class="white-text light">The DST funds the SAEON Open Data Platform (ODP) and associated dissemination portals. Developed by SAEON on behalf of DST, DEA, and other stakeholders</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text light">Legal</h5>
+          <ul>
+            <li><a class="white-text light" href="#!">Disclaimer</a></li>
+            <li><a class="modal-trigger"  href="#using-modal">Using SARVA</a></li>  
+            <li><a class="white-text light" href="#!">Terms and Conditions</a></li>
+            <li><a class="white-text light" href="#!">Data Licenses</a></li>
+            <li><a class="white-text light" href="#!">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text light">SAEON ODP</h5>
+          <ul>
+            <li><a class="white-text light" href="#!">Open Data Platform</a></li>
+            <li><a class="white-text light" href="#!">For Stakeholders</a></li>
+            <li><a class="white-text light" href="#!">For Developers</a></li>
+            <li><a class="white-text light" href="#!">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text light">Funding</h5>
+            <img src="image/logo_dst.png">
+        </div>          
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Created by <a class="blue-text text-lighten-3" href="http://www.saeon.ac.za">SAEON</a> using <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> and SAEON Open Data Platform APIs.
+      </div>
+    </div>
+  </footer>
+    
+ <!--MODALS-->    
+    
+  <!--GENERAL MODAL-->
+ 
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <h5>About</h5>
+    </div>
+  </div>    
+    
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <h5>Contact</h5>
+    </div>
+  </div>      
+    
+  <div id="settings-modal" class="modal">
+    <div class="modal-content">
+      <h5>Settings</h5>
+    </div>
+  </div
+      
+  <div id="search-modal" class="modal">
+    <div class="modal-content">
+      <h5>Search</h5>
+    </div>
+  </div>  
+    
+  <div id="sso-modal" class="modal">
+    <div class="modal-sso">
+      <h5>Authentication</h5>
+    </div>
+  </div>     
+    
+  <div id="profile-modal" class="modal">
+    <div class="modal-content">
+      <h5>Profiler</h5>
+    </div>
+  </div>      
+    
+  <div id="theme-modal" class="modal">
+    <div class="modal-content">
+      <h5>Themes</h5>
+    </div>
+  </div>    
+    
+  <div id="contr-modal" class="modal">
+    <div class="modal-content">
+      <h5>Contribute Data and Media</h5>
+    </div>
+  </div>
+
+  <div id="data-modal" class="modal">
+    <div class="modal-content">
+      <h5>Working with large distributed data sets in the web</h5>
+    </div>
+  </div>     
+    
+  <div id="crowd-modal" class="modal">
+    <div class="modal-content">
+      <h5>Building up a record of events and disasters</h5>
+    </div>
+  </div>      
+    
+  <div id="using-modal" class="modal">
+    <div class="modal-content">
+      <h5>Using SARVA 3.0</h5>
+    </div>
+  </div>   
+
+  <div id="frame-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 3.0 Semantic Framework</h5>
+    </div>
+  </div> 
+    
+  <div id="evidence-modal" class="modal">
+    <div class="modal-content">
+      <h5>Data and Evidence: Be Careful!</h5>
+    </div>
+  </div>     
+    
+  <div id="nccrd-modal" class="modal">
+    <div class="modal-content">
+      <h5>National Climate Change Response Database</h5>
+    </div>
+  </div>       
+    
+  <div id="atlas-modal" class="modal">
+    <div class="modal-content">
+     <h5>SARVA 3.0 Atlases and Online Data Sources</h5>
+    </div>
+  </div>    
+
+  <div id="disco-modal" class="modal">
+    <div class="modal-content">
+      <h5>Search and Discovery</h5>
+    </div>
+  </div>      
+    
+  <div id="saws-modal" class="modal">
+    <div class="modal-content">
+      <h5>SAWS Climate Atlas</h5>
+    </div>
+  </div>    
+    
+  <div id="beeh-modal" class="modal">
+    <div class="modal-content">
+      <h5>SA Atlas of Agrohydrology</h5>
+    </div>
+  </div>     
+    
+  <div id="sarv2-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 2.0 Report</h5>
+    </div>
+  </div>   
+    
+  <div id="sarv1-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 1.0 Report</h5>
+    </div>
+  </div>     
+    
+  <div id="read-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 2.0 - Reading Risk</h5>
+    </div>
+  </div>     
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/pageStyles.js"></script>
+  <script src="js/pageFunctions.js"></script>
+  <script src="js/frame.js"></script> 
+    
+
+<script>
+    $(document).ready(function () {
+        $('.modal').modal({
+            //opacity: .5,
+            startingTop: '-2%',
+            endingTop: '3%',
+            ready: function(modal, trigger) {
+                var element = modal[0]
+                var iframe = document.createElement("iframe");
+                console.log('Boo hoo');
+                //element.removeChild(iframe);
+
+                if(element.id === 'sarva-2-modal'){
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/hardcopy_atlas.js&THEME=GREY";}  
+                else if(element.id === 'about-modal') {
+                    iframe.src = "page_about.html";}  
+                else if(element.id === 'contact-modal') {
+                    iframe.src = "page_contact.html";}
+                else if(element.id === 'settings-modal') {
+                    iframe.src = "page_settings.html";}                
+                else if(element.id === 'sso-modal') {
+                    iframe.src = "page_sso.html";} 
+                else if(element.id === 'search-modal') {
+                    iframe.src = "http://www.sasdi.net/search.aspx?noframe=true";}
+                else if(element.id === 'profile-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/profiler/main.aspx";}
+                else if(element.id === 'theme-modal') {
+                    iframe.src = "page_theme.html";}
+                else if(element.id === 'contr-modal') {
+                    iframe.src = "page_contribute.html";} 
+                else if(element.id === 'using-modal') {
+                    iframe.src = "page_using.html";}  
+                else if(element.id === 'frame-modal') {
+                    iframe.src = "page_semantic.html";}  
+                else if(element.id === 'atlas-modal') {
+                    iframe.src = "page_atlas.html";}  
+                else if(element.id === 'disco-modal') {
+                    iframe.src = "page_search.html";}  
+                else if(element.id === 'data-modal') {
+                    iframe.src = "page_data.html";}  
+                 else if(element.id === 'crowd-modal') {
+                    iframe.src = "page_crowd.html";}                  
+                 else if(element.id === 'evidence-modal') {
+                    iframe.src = "page_evidence.html";}   
+                 else if(element.id === 'nccrd-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/nccrdsite/projects.html";}                   
+                
+                else if(element.id === 'saws-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_saws.js&THEME=GREY";}  
+                else if(element.id === 'beeh-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_beeh.js&THEME=GREY";}  
+                else if(element.id === 'sarv2-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/hardcopy_atlas.js&THEME=GREY";}   
+                else if(element.id === 'sarv1-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_beeh.js&THEME=GREY";}   
+                else if(element.id === 'read-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_docs.js&THEME=GREY";}                       
+                iframe.height = "98%";
+                iframe.width = "100%";
+
+                element.appendChild(iframe);                   
+            }
+        });
+    });
+    
+    $(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250'
+      },
+    });
+  });
+    
+    
+$(".dropdown-trigger").dropdown();     
+    
+//  $(document).ready(function(){
+//    $('.sidenav').sidenav();
+//  });    
+    
+</script>   
+    </body>
+</html>
